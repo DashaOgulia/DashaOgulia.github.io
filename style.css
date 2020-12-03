@@ -287,3 +287,16 @@ sup {
     bottom: 40%;
     border: 1px solid #2c71b8;
     padding: 2px;
+}
+.like .fone{
+    background-color: #2c71b8;
+}
+.lupa .fone{
+    background-color: #2c71b8;
+}
+
+.load{
+    text-align:center;
+    font-size: 36px;
+    margin: 30px;
+}
