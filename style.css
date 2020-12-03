@@ -20,11 +20,10 @@ body{
     margin-right:-15px;
 
 }
-.row:after,.menu:after{
+.row:after,.menu:after, .items:after {
     content:"";
     display:block;
     clear:both;
-
 }
 
 [class*="col-"]{
@@ -175,3 +174,116 @@ border-right: 1px solid #2c71b8;
     background-color: #fff;
     color: #2c71b8;
 }
+
+.main{
+    padding: 30px;
+    color:#fff
+}
+.col-md-9{
+    width:75%;
+}
+
+
+.col-md-9 h1{
+    font-size:48px;
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+.block{
+    font-size: 21px;
+    width:30%;
+    height:660px;
+    background-color: #2c72b8b9;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    height: auto;
+    padding-bottom: 15px;
+    margin: 15px;
+    float:left;
+    line-height: 1.6;
+}
+.items{
+    margin-right: -15px;
+    margin-left: -15px;
+
+  
+   
+
+}
+
+.pictogram{
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 180px;
+    position: relative;
+    
+}
+.pictogram img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.inform{
+    padding: 15px;
+}
+.inform h2{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.inform b{
+    font-weight: bold;
+}
+.inform p{
+    font-size: 21px;
+}
+
+.price{
+    font-size:48px;
+    font-weight: bold;
+    text-align: center;
+}
+sup {
+    vertical-align: top;
+    font-size:28px;
+}
+
+.details{
+    background-color: transparent;
+    font-size: 21px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    margin: 7px;
+}
+.buttons{
+    text-align: center;
+}
+
+.add-cart{
+    font-size: 21px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.207);
+    color: #fff;
+    border: none;
+    padding: 15px 28px;
+    margin: 7px;
+}
+
+.lupa img{
+    background-color: transparent;
+    left: 80%;
+    bottom: 80%;
+    border: 1px solid #2c71b8;
+    padding: 2px;
+}
+
+.like img{
+    background-color: transparent;
+    left: 80%;
+    bottom: 40%;
+    border: 1px solid #2c71b8;
+    padding: 2px;
