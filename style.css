@@ -155,6 +155,7 @@ body{
     color: white;
     width:200%;
     display:none;
+    z-index: 1;
 }
 
 .menu2 li{
@@ -166,6 +167,7 @@ body{
     text-align: left;
     padding-left: 30px;
     color:white;
+   
 }
 
 .menu2 a:hover{
@@ -277,7 +279,7 @@ input[type="checkbox"]:checked + label:before{
         height: auto;
         padding-bottom: 15px;
         margin: 15px;
-        float:left;
+       
         line-height: 1.6;
 }
 .product-img{
