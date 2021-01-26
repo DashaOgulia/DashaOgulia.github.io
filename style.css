@@ -387,7 +387,7 @@ sup {
     top: 50px;
 }
 
-.heart-ico:hover{
+.heart-ico:hover,.liked{
     background: #2c71b8 url("images/heart-white.png") no-repeat center;
 }
 
@@ -412,3 +412,62 @@ text-align:center;
     color: #2c71b8;
 }
 
+.modal{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index:100;
+    display:none;
+    
+}
+
+
+.modal-block{
+    width:300px;
+    margin:80px auto;
+    height:200px;
+    border:1px solid grey;
+    background-color:#fff;
+    padding:15px;
+
+}
+.form-fields{
+    margin:10px 0px;
+}
+.form-fields input{
+    width:100%;
+    height:30px;
+    padding:5px;
+    border:1px solid grey;
+
+}
+.btn-close{
+    text-align:right;
+}
+
+.modal-block button{
+    border:1px solid grey;
+    padding:5px;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+
+.product-count,.product-count input {
+    text-align: center;
+}
+.product-count button {
+    padding: 3px 8px;
+}
+.slider-block > div{
+    padding: 150px 0;
+    text-align: center;
+    color:#fff;
+    font-size: 50px;
+}

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop-project</title>
     <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,7 +59,7 @@
                         <button type="search-btn"></button>
                     </div>
                     <div class="cart">
-                        <div class="submit">4</div>
+                        <div class="submit" id="products-count">0</div>
                     </div>
 
                 </div>
@@ -66,6 +70,15 @@
 
     <!-- CONTAINER -->
     <main class="main">
+        <div class="container">
+            <div class="slider-block">
+                <div>Slide 1</div>
+                <div>Slide 2</div>
+                <div>Slide 3</div>
+              </div>
+        </div>
+        
+                      
         <div class="container">
             <!-- FILETR -->
             <div class="row">
@@ -181,11 +194,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$599<sup>25</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -211,11 +229,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$1250<sup>99</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class=" add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -241,11 +264,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$399<sup>50</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class=" add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -271,11 +299,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$599<sup>25</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -301,11 +334,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$1250<sup>99</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -330,11 +368,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$399<sup>50</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -360,11 +403,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$599<sup>25</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -390,11 +438,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$1250<sup>99</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class="more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -420,11 +473,16 @@
                                     <p><b>RAM:</b> 1GB</p>
                                     <div class=price>$399<sup>50</sup></div>
                                 </div>
-                                <div class="buttons">
-                                    <button class="details">MORE DETAILS</button>
+                                <div class="product-count">
+                                    <button class="decrement-button">-</button>
+                                    <input type="text" value="1" class="decrement-quantity"> 
+                                    <button class="increment-button">+</button>
                                 </div>
                                 <div class="buttons">
-                                    <button class="details">ADD TO CART
+                                    <button class=" more-details-btn details">MORE DETAILS</button>
+                                </div>
+                                <div class="buttons">
+                                    <button class="add-to-cart  details">ADD TO CART
                                         <img src="images/cart-white.png" alt="cart">
                                     </button>
                                 </div>
@@ -445,6 +503,25 @@
         </div>
     
     </footer>
+
+
+    <div class="modal">
+        <div class="modal-block">
+            <form action="#">
+                <div class="btn-close">X</div>
+                <h3>Please call for more details</h3>
+                <div class="form-fields"><input type="text" placeholder="Your name"></div>
+                <div class="form-fields"><input type="text" placeholder="Your phone"></div>
+                <Button>Pleace call</Button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
+
