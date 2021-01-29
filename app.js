@@ -12,7 +12,8 @@ let addToCartButtons = document.querySelectorAll(".add-to-cart");
 
 for(let i = 0; i < addToCartButtons.length; i++){
     addToCartButtons[i].addEventListener("click", function () {
-        productsCountEl.textContent = +productsCountEl.textContent +1;  
+        productsCountEl.textContent = +productsCountEl.textContent + +quantityValue[i].value; 
+        quantityValue[i].value = 1; 
     })
 }
 
@@ -48,7 +49,8 @@ modal.addEventListener("click",function(e){
 //Show modal-by scroll
 function showModalByScroll(){
     if(window.pageYOffset > document.body.scrollHeight/2){
-openModal()
+openModal();
+window.removeEventListener("scroll", showModalByScroll)
     }
 }
 
@@ -236,9 +238,12 @@ this.domRefs.decrementBtn.addEventListener("click", this.decrementBtn.bind(this)
 
 console.log(this)
 }
-
+const counters = [];
+quantityValue.forEach((counterItem,i)=>{
+    counters[i] - new Counter (incrementBtns[i], decrementBtns[i], counterItem)
+})
 const counter = new Counter (incrementBtns[0], decrementBtns[0], quantityValue[0]);
-const counter1 = new Counter (incrementBtns[1], decrementBtns[1], quantityValue[1]);
+
 
 
 
